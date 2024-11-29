@@ -1,0 +1,33 @@
+{% extends "home.html" %}
+
+{% block body %}
+    <div class=" flex justify-center items-center h-screen">
+        <div class=" border border-solid border-yellow-400 p-3 ">
+            <div class=" border border-solid border-yellow-400 p-3">
+                <div class=" border border-solid border-yellow-400 p-5">
+                    <p class=" text-center mb-5 font-serif text-lg font-bold">Sign up</p>
+                    <form id="signupForm" method="POST">
+                        <p>Username</p>
+                        <input class=" border border-solid border-black rounded-xl pl-2 mt-2 mb-2" type="text" name="username" id="username" required/>
+                        <p>Email</p>
+                        <input class=" border border-solid border-black rounded-xl pl-2 mt-2 mb-2" type="text" name="email" id="email" required/>
+                        <p>Password</p>
+                        <input class=" border border-solid border-black rounded-xl pl-2 mt-2" type="password" name="password" id="password" required/>
+
+                        <div class=" flex justify-center mt-6">
+                            <button id="signupSubmit" type="submit" class=" p-1 bg-yellow-400 rounded-lg font-serif text-lg">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        const signupForm = document.getElementById('signupForm')
+        const signupSubmit = document.getElementById('signupSubmit')
+        
+        signupSubmit.addEventListener('click', function(e){
+            e.preventDefault()
+        })
+    </script> -->
+{% endblock %}

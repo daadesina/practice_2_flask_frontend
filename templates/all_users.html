@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+
+{% block body %}
+<!-- name of the logged in user -->
+ <div class=" flex justify-center gap-3 p-3 flex-wrap">
+    {% for user in users %}
+    <div class=" border border-solid border-blue-400 p-2">
+        <p>ID: {{user['id']}} </p>
+        <p>Username: {{user['username']}} </p>
+        <p>Email: {{user['email']}} </p>
+        <p>Password: {{user['password']}} </p>
+    </div>
+    {% endfor %}
+ </div>
+{% endblock %}

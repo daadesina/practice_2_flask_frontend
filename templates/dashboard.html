@@ -1,0 +1,13 @@
+{% extends "home.html" %}
+
+{% block body %}
+<!-- name of the logged in user -->
+ <div class=" flex justify-center gap-3 p-3">
+    <div class=" border border-solid border-black p-2">
+        <p>ID: {{user['id']}} </p>
+        <p>Username: {{user['username']}} </p>
+        <p>Email: {{user['email']}} </p>
+        <p>Password: {{user['password']}} </p>
+    </div>
+ </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/output.css">
+    <title>Document</title>
+</head>
+<body>
+    {% block body %}
+    <div class=" flex justify-center items-center h-screen">
+        <div>
+            <p class=" mb-6 text-2xl font-mono font-bold">Welcome Home</p>
+            <div class=" flex flex-col gap-5 text-center">
+                <a href="/signup" class=" p-2 bg-yellow-400 rounded-2xl font-serif text-lg"><button>Sign up</button></a>
+                <a href="/login" class=" p-2 bg-green-400 rounded-2xl font-serif text-lg"><button>Login</button></a>
+                <a href="/all_users" class=" p-2 bg-blue-400 rounded-2xl font-serif text-lg"><button>All Users</button></a>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
